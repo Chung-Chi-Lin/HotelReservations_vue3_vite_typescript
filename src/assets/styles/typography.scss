@@ -1,0 +1,39 @@
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+*[class*="display-"] {
+    letter-spacing: $custom-headings-letter-spacing;
+    color: $neutral;
+}
+
+%text {
+    color: inherit;
+    letter-spacing: $custom-font-letter-spacing-base;
+    line-height: $line-height-base;
+}
+
+.text-{
+    &title, &subtitle {
+        @extend %text;
+        font-weight: $headings-font-weight;
+    }
+    
+    &title,
+    &body {
+        font-size: $font-size-base;
+    }
+    
+    &body, &body2, &tiny {
+        @extend %text;
+        font-weight: $font-weight-base;
+    }
+
+    &subtitle,
+    &body2 {
+        font-size: $font-size-base * 0.875;
+    }
+
+    &tiny {
+        font-size: $font-size-base * 0.75;
+    }
+}
