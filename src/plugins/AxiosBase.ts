@@ -3,14 +3,14 @@ import axios from "axios";
 import type { AxiosRequestConfig, AxiosResponse, AxiosError } from "axios";
 import { setSwalFire } from "@/plugins/Sweetalert2";
 import router from "@/router/index";
-const { VITE_API_ROOT } = import.meta.env;
+const { VITE_APP_API } = import.meta.env;
 import AuthStore from "@/stores/AuthStore";
 import LoadingStore from "@/stores/LoadingStore";
 const { hideLoading } = LoadingStore();
 const { getToken, logout } = AuthStore();
 
 const baseConfig: AxiosRequestConfig = {
-    baseURL: VITE_API_ROOT,
+    baseURL: VITE_APP_API,
     //timeout: 60000
 }
 

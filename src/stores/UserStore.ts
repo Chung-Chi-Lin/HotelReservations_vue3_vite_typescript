@@ -9,7 +9,7 @@ const { changeCookie, setStorageSpecifyData } = AuthStore();
 export default defineStore("UserStore", () => {
     /**
      * 登入
-     * 
+     *
      * @param body 登入資料
      */
     function login(body: LoginForm): Promise<boolean> {
@@ -24,7 +24,7 @@ export default defineStore("UserStore", () => {
 
     /**
      * 註冊
-     * 
+     *
      * @param body 註冊資料
      */
     function signup(body: RegisterForm): Promise<boolean> {
@@ -40,7 +40,7 @@ export default defineStore("UserStore", () => {
 
     /**
      * 修改密碼
-     * 
+     *
      * @param body 修改密碼資料
      */
     function changePassword(body: ChangePasswordForm): Promise<boolean> {
@@ -55,7 +55,7 @@ export default defineStore("UserStore", () => {
 
     /**
      * 修改會員資料
-     * 
+     *
      * @param body 會員資料
      */
     function editMyinfo(body: EditMyInfoForm): Promise<boolean> {
@@ -71,7 +71,7 @@ export default defineStore("UserStore", () => {
 
     /**
      * 忘記密碼
-     * 
+     *
      * @param body 修改密碼資料
      */
     function forgot(body: ForgotForm): Promise<boolean> {

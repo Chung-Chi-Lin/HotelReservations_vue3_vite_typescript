@@ -59,7 +59,7 @@ function toggleOffcanvasNavbar(method: "show" | "hide") :void {
                     <div class="collapse navbar-collapse show">
                         <ul class="navbar-nav ms-auto align-items-lg-center gap-4 text-center">
                             <li class="nav-item">
-                                <RouterLink class="nav-link" to="/rooms" @click="toggleOffcanvasNavbar('hide')">客房旅宿</RouterLink>
+                                <RouterLink class="nav-link" to="/room-type" @click="toggleOffcanvasNavbar('hide')">客房旅宿</RouterLink>
                             </li>
                             <li class="nav-item d-lg-none">
                                 <RouterLink class="nav-link" :to="authStore.userInfo ? '/user/edit' : '/login'" @click="toggleOffcanvasNavbar('hide')">{{ authStore.userInfo ? "我的帳戶" : "會員登入" }}</RouterLink>
