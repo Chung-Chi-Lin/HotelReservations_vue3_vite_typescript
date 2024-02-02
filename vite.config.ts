@@ -10,7 +10,7 @@ export default defineConfig({
       include: ["src/**/*.ts", "src/**/*.vue", "src/*.ts", "src/*.vue"],
     })
   ],
-  base: process.env.NODE_ENV === "production" ? "/freyja-hotel-booking/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/HotelReservations_vue3_vite_typescript/" : "/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
