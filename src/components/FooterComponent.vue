@@ -1,11 +1,23 @@
 <script setup lang="ts">
 import { logo, line_mobile, line2, LINE, IG } from "@/data/ImagePaths";
-const { VITE_COMPANY_NAME } = import.meta.env; 
+import { useRoute } from "vue-router";
+const { VITE_COMPANY_NAME } = import.meta.env;
+import { ref, watch } from "vue";
+
+// 取得 routeName
+const route = useRoute();
+const routeName = ref<undefined | string>(undefined);
+watch<any, any>(
+  () => route.name,
+  (newVal: string | undefined): void => {
+    routeName.value = newVal;
+  }
+);
 </script>
 
 <template>
-    <img :src="line_mobile" :alt="VITE_COMPANY_NAME" class="line-img d-lg-none">
-    <img :src="line2" :alt="VITE_COMPANY_NAME" class="line-img d-none d-lg-block">
+    <img v-if="routeName !== 'roomType'" :src="line_mobile" :alt="VITE_COMPANY_NAME" class="line-img d-lg-none">
+    <img v-if="routeName !== 'roomType'" :src="line2" :alt="VITE_COMPANY_NAME" class="line-img d-none d-lg-block">
     <div class="container-lg pt-12 pb-12 pb-lg-14 text-white d-grid gap-12">
         <div class="row row-cols-1 row-cols-lg-2 justify-content-between d-grid d-lg-flex gap-8 gap-lg-0">
             <div class="col d-grid gap-8">

@@ -37,11 +37,18 @@ export default [
             name: "userOrders",
             component: () => import("@/views/user/OrdersView.vue"),
             meta: { title: "訂單列表" }
-        }, {
+        },
+        {
             // 重新導向
             path: "/:pathMatch(.*)*",
             redirect: "/user/edit"
         }]
+    },
+    {
+        path: "/room-type",
+        name: "roomType",
+        component: () => import("@/views/RoomTypeView.vue"),
+        meta: { isAuthGuard: true }
     },
     {
         path: "/guideline",

@@ -28,7 +28,7 @@
     @include media-breakpoint-up(sm) {
         width: 335px;
     }
-    
+
     @include media-breakpoint-up(lg) {
         width: 416px;
     }

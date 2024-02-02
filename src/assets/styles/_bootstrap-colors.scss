@@ -5,11 +5,13 @@ $cyan: #3BADEF !default;
 $red: #DA3E51 !default;
 $black: #000 !default;
 $white: #fff !default;
+$milk: #F7F2EE !default;
 
 $theme-colors: (
     "primary": $blue,
     "success": $green,
-    "info": $cyan
+    "info": $cyan,
+    "milk-white": $milk,
 ) !default;
 
 $primary-120: #7B6651 !default;
