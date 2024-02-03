@@ -16,7 +16,6 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  // 每個頁面都可以使用變數
   css: {
     preprocessorOptions: {
       scss: {
@@ -25,4 +24,3 @@ export default defineConfig({
     },
   }
 })
-
