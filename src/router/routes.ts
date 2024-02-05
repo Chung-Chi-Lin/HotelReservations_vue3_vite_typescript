@@ -16,10 +16,6 @@ export default [
             name: "register",
             component: () => import("@/views/member/RegisterView.vue"),
             meta: { title: "註冊" }
-        }, {
-            // 重新導向
-            path: "/:pathMatch(.*)*",
-            redirect: "/login"
         }]
     },
     {
@@ -37,11 +33,6 @@ export default [
             name: "userOrders",
             component: () => import("@/views/user/OrdersView.vue"),
             meta: { title: "訂單列表" }
-        },
-        {
-            // 重新導向
-            path: "/:pathMatch(.*)*",
-            redirect: "/user/edit"
         }]
     },
     {

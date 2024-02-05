@@ -22,7 +22,8 @@ const authStore = AuthStore();
         <RouterView />
     </div>
 </template>
-
+https://chung-chi-lin.github.io/HotelReservations_vue3_vite_typescript/#/
+https://ellayang1227.github.io/freyja-hotel-booking/#/login
 <style lang="scss">
 .banner {
     position: relative;
