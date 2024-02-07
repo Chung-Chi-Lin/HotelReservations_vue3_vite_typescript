@@ -39,7 +39,7 @@ export default [
         path: "/room-type",
         name: "roomType",
         component: () => import("@/views/RoomTypeView.vue"),
-        meta: { isAuthGuard: true }
+        meta: { isAuthGuard: true, title: "客房旅宿" }
     },
     {
         path: "/guideline",

@@ -1,4 +1,5 @@
 <template>
+  <BannerCarousel />
   <div class="bg-milk-white">
     <div class="container">
       <div class="roomType-title">
@@ -85,6 +86,7 @@
 </template>
 <script setup lang="ts">
 import LoadingStore from "@/stores/LoadingStore";
+import BannerCarousel from "@/components/BannerCarousel.vue";
 
 const { hideLoading } = LoadingStore();
 
