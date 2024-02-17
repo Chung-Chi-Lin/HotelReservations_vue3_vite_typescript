@@ -42,6 +42,12 @@ export default [
         meta: { isAuthGuard: true, title: "客房旅宿" }
     },
     {
+        path: "/reserve-room",
+        name: "reserveRoom",
+        component: () => import("@/views/ReserveRoomView.vue"),
+        meta: { isAuthGuard: true, title: "預約房型" }
+    },
+    {
         path: "/guideline",
         name: "guideline",
         component: () => import("@/views/guidelineView.vue"),

@@ -28,7 +28,7 @@
       <span class="visually-hidden">Next</span>
     </button>
     <!-- Fixed title for all slides -->
-    <div class="ms-auto row carousel-fixed-title text-md-start text-center">
+    <div class="ms-auto align-items-center row carousel-fixed-title text-md-start text-center">
       <div class="col-md-7 col-12">
         <h2 class="text-primary fw-bold f-40">享樂酒店</h2>
         <h5 class="title text-primary">Enjoyment Luxury Hotel</h5>
@@ -38,7 +38,7 @@
       <div class="col-md-7 col-12 d-block d-md-none">
         <div class="title-sm-container"></div>
       </div>
-      <div class="col-md-7 col-12">
+      <div class="col-md-5 col-12">
         <h1 class="text-white">客房旅宿</h1>
       </div>
     </div>
